@@ -4,7 +4,7 @@
 
 Eco Sentry is a "Cognitive Firewall" that uses Vector Search to detect unknown anomalies in real-time and an Edge-based LLM to explain *why* they are dangerous.
 
-![Live Dashboard](snapshot eco security.png)
+![Live Dashboard](snapshot_eco_security.png)
 
 ## ⚡ The Challenge vs. The Solution
 
