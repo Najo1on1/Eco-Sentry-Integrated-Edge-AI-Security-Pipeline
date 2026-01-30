@@ -1,0 +1,19 @@
+# Ignore Virtual Environments (The 7.6GB folder)
+eco1/
+eco2/
+eco3/
+venv/
+env/
+
+# Ignore Python Cache
+__pycache__/
+*.pyc
+
+# Ignore Database Storage & Models
+chroma_db_storage/
+*.safetensors
+*.bin
+*.pt
+
+# Ignore System files
+.DS_Store

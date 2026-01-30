@@ -1,0 +1,17 @@
+services:
+  edge-llm:
+    image: vllm/vllm-openai:latest
+    runtime: nvidia
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
+    volumes:
+      - ~/.cache/huggingface:/root/.cache/huggingface
+    ports:
+      - "8000:8000"
+    ipc: host
+    command: >
+      --model TheBloke/TinyLlama-1.1B-Chat-v1.0-AWQ
+      --quantization awq
+      --dtype float16
+      --gpu-memory-utilization 0.60
+      --max-model-len 2048
